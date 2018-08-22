@@ -13,7 +13,7 @@ public class Board {
     }
 
     public void draw() {
-        gc.setFill(ColorFactory.colorSet(1));
+        gc.setFill(ColorFactory.colorSet(99));
         int fontSize = 80;
         gc.setFont(new Font(fontSize));
         gc.fillText("2048", 25, 90);
@@ -35,13 +35,13 @@ public class Board {
     }
 
     private void showText(String text, int pos) {
-        gc.setFill(ColorFactory.colorSet(0));
+        gc.setFill(ColorFactory.colorSet(99));
         gc.fillRoundRect(20, 320, 560, 205, Const.ANGLE, Const.ANGLE);
         gc.setFill(ColorFactory.colorSet(2));
         gc.fillRoundRect(25, 325, 550, 195, Const.ANGLE, Const.ANGLE);
 
         int fontSize = 110;
-        gc.setFill(ColorFactory.colorSet(1111));
+        gc.setFill(ColorFactory.colorSet(99));
         gc.setFont(new Font(fontSize));
         gc.fillText(text, pos, 425);
         fontSize = 30;
@@ -51,7 +51,7 @@ public class Board {
 
     public void scorePrint(int score) {
         int fontSize = 30;
-        gc.setFill(ColorFactory.colorSet(1));
+        gc.setFill(ColorFactory.colorSet(99));
         gc.setFont(new Font(fontSize));
         gc.fillText("SCORE", 250, 55);
         gc.fillText("" + score, 250, 85);
@@ -59,7 +59,7 @@ public class Board {
 
     public void bestScorePrint(int bestScore) {
         int fontSize = 30;
-        gc.setFill(ColorFactory.colorSet(1));
+        gc.setFill(ColorFactory.colorSet(99));
         gc.setFont(new Font(fontSize));
         gc.fillText("BEST SCORE", 405, 55);
         gc.fillText("" + bestScore, 405, 85);

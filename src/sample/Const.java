@@ -9,7 +9,7 @@ public class Const {
     public static final int CANVAS_X = 600;
     public static final int CANVAS_Y = 700;
     public static final int TILE_SIZE = 125;
-    public static final int INTERVAL = 10;
+    private static final int INTERVAL = 10;
     public static final int ANGLE = 15;
     public static final int CASE_X = 25;
     public static final int CASE_Y = 125;
@@ -20,7 +20,7 @@ public class Const {
     public static int[] arrX = new int[4];
     public static int[] arrY = new int[4];
     public static int[] valueArray = new int[20];
-    public static boolean[][] free = new boolean[4][4];
+    private static boolean[][] free = new boolean[4][4];
 
     public static void arraysInit() {
         positionArrayInit();

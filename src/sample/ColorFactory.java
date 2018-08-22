@@ -37,6 +37,8 @@ public class ColorFactory {
                 return Color.web("#edc22e");
             case 1111:
                 return Color.web("#ff6347");
+            case 99:
+                return Color.web("#008000");
         }
         return Color.web("#cdc1b4");
     }
